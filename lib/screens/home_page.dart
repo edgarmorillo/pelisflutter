@@ -82,7 +82,7 @@ class _MovieExplorerHomePageState extends State<MovieExplorerHomePage> {
     try {
       final url = Uri.https('api.themoviedb.org', '/3/search/movie', {
         'api_key': ApiConfig.apiKey,
-        'language': 'es-ES', // Puedes ajustar el idioma según tus necesidades
+        'language': 'es-ES', // ajustar el idioma según necesidades
         'page': '1',
         'query': query,
       });
@@ -112,7 +112,7 @@ class _MovieExplorerHomePageState extends State<MovieExplorerHomePage> {
     } catch (e) {
       // Error general durante la búsqueda
       print('Error searching movies: $e');
-      // También puedes mostrar un mensaje al usuario si lo deseas.
+      // También se puede mostrar un mensaje al usuario si se deseas.
     }
   }
 
